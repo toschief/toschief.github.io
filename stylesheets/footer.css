@@ -11,3 +11,39 @@
   color: white;
   position: fixed;
 }
+
+#a1 {
+  color: white;
+  float: left;
+  font-family: Calibri;
+  padding-left: 10px;
+
+}
+#h1 {
+  background-color: #141414;
+  height: 70px;
+  padding: 10px;
+  margin: -8px;
+}
+
+#a2 {
+  margin: auto;
+  background-color: white;
+
+  color: #000000;
+  border-radius: 78px;
+  text-decoration: none;
+  font-family: Calibri;
+  padding: 9px;
+  margin: 2px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+#a2:hover {
+  border-radius: 12px;
+}
+#nav1 {
+  margin-top: 23px;
+  margin-right: 13px;
+  float: right;
+}
