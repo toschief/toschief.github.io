@@ -10,18 +10,80 @@
     <h1 id="a1">toschief</h1>
     <div>
       <nav id="nav1">
-        <a id="a2" href="">Home</a>
+        <a id="a2" href="./index.html">Home</a>
         <a id="a2" href="./crypty.html">Crypty</a>
       </nav>
     </div>
   </header>
-  <body>
-    <h1>Crypty</h1>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis
-      magni perspiciatis porro nobis illo quas nam, doloribus consequuntur ab
-      cum sunt. Hic dolores, reiciendis quidem temporibus pariatur dolore
-      libero.
-    </p>
+  <body style="background-color: #2d2d2d">
+    <link rel="stylesheet" href="./stylesheets/crypty.css" />
+
+    <div class="mainc">
+      <h1 id="hs">Crypty</h1>
+      <div id="d">
+        <script src="./scripts/caesar.js"></script>
+        <h2 id="h">Caesar</h2>
+        <div id="d1">
+          <input type="radio" name="deen1" id="r1" class="r" checked="true" />
+          <label>Decrypt</label>
+          <input type="radio" name="deen1" id="r2" class="r" />
+          <label>Encrypt</label>
+
+          <table id="t1">
+            <tr>
+              <th>
+                <button onclick="onbuttonleft()" class="button1">Left</button>
+              </th>
+              <th><p id="keyletter">Key: A</p></th>
+              <th><p id="keynumber">0</p></th>
+              <th>
+                <button onclick="onbuttonright()" class="button1">Right</button>
+              </th>
+            </tr>
+          </table>
+        </div>
+
+        <div id="d2">
+          <div>
+            <p id="output"></p>
+            <textarea id="input"></textarea>
+          </div>
+          <button onclick="onbuttonstart()" class="button2">Start</button>
+        </div>
+      </div>
+
+      <div id="d">
+        <script src="./scripts/vigenere.js"></script>
+        <h2 id="h">Vigenere</h2>
+        <div id="d1">
+          <div>
+            <input
+              type="radio"
+              name="deen2"
+              id="r1v"
+              class="r"
+              checked="true"
+            />
+            <label>Decrypt</label>
+            <input type="radio" name="deen2" id="r2v" class="r" />
+            <label>Encrypt</label>
+          </div>
+
+          <textarea id="keyinputv"></textarea>
+        </div>
+
+        <div id="d2">
+          <div>
+            <p id="outputv"></p>
+            <textarea id="inputv"></textarea>
+          </div>
+          <button onclick="vigenereCipher()" class="button2">Start</button>
+        </div>
+      </div>
+    </div>
   </body>
+  <footer id="f1">
+    <link rel="stylesheet" href="./stylesheets/footer.css" />
+    <p>Created by toschief</p>
+  </footer>
 </html>

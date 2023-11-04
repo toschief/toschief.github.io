@@ -1,10 +1,12 @@
 #a1 {
   color: white;
   float: left;
+  font-family: Calibri;
+  padding-left: 10px;
 
 }
 #h1 {
-  background-color: #2d2d2d;
+  background-color: #141414;
   height: 70px;
   padding: 10px;
   margin: -8px;
@@ -13,6 +15,7 @@
 #a2 {
   margin: auto;
   background-color: white;
+
   color: #000000;
   border-radius: 78px;
   text-decoration: none;

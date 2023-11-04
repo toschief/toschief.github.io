@@ -1,0 +1,13 @@
+#f1 {
+  bottom: 0;
+  width: 100%;
+  font-family: Calibri;
+  text-align: center;
+  font-size: 20px;
+  background-color: #141414;
+  height: 80px;
+  padding: 10px;
+  margin: -8px;
+  color: white;
+  position: fixed;
+}
