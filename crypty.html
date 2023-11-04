@@ -4,27 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>toschief</title>
+    <link rel="stylesheet" type="text/css" href="./Stylesheets/header.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/crypty.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/footer.css" />
   </head>
-  <header id="h1">
-    <h1 id="a1">toschief</h1>
-    <div>
-      <nav id="nav1">
-        <a id="a2" href="./index.html">Home</a>
-        <a id="a2" href="./crypty.html">Crypty</a>
-      </nav>
-    </div>
-  </header>
   <body style="background-color: #2d2d2d">
-    <link rel="stylesheet" href="./Stylesheets/header.css" />
-    <link rel="stylesheet" href="./stylesheets/crypty.css" />
-    <link rel="stylesheet" href="./stylesheets/footer.css" />
+    <header id="h1">
+      <h1 id="a1">toschief</h1>
+      <div>
+        <nav id="nav1">
+          <a href="./index.html" id="a2">Home</a>
+          <a href="./crypty.html" id="a2">Crypty</a>
+        </nav>
+      </div>
+    </header>
 
     <div class="mainc">
       <h1 id="hs">Crypty</h1>
-      <div id="d">
-        <script src="./scripts/caesar.js"></script>
+      <div class="d">
         <h2 id="h">Caesar</h2>
-        <div id="d1">
+        <div class="d1">
           <input type="radio" name="deen1" id="r1" class="r" checked="true" />
           <label>Decrypt</label>
           <input type="radio" name="deen1" id="r2" class="r" />
@@ -44,7 +43,7 @@
           </table>
         </div>
 
-        <div id="d2">
+        <div class="d2">
           <div>
             <p id="output"></p>
             <textarea id="input"></textarea>
@@ -53,10 +52,9 @@
         </div>
       </div>
 
-      <div id="d">
-        <script src="./scripts/vigenere.js"></script>
+      <div class="d">
         <h2 id="h">Vigenere</h2>
-        <div id="d1">
+        <div class="d1">
           <div>
             <input
               type="radio"
@@ -73,7 +71,7 @@
           <textarea id="keyinputv"></textarea>
         </div>
 
-        <div id="d2">
+        <div class="d2">
           <div>
             <p id="outputv"></p>
             <textarea id="inputv"></textarea>
@@ -82,8 +80,11 @@
         </div>
       </div>
     </div>
+
+    <footer id="f1">
+      <p>Created by toschief</p>
+    </footer>
+    <script src="./scripts/caesar.js"></script>
+    <script src="./scripts/vigenere.js"></script>
   </body>
-  <footer id="f1">
-    <p>Created by toschief</p>
-  </footer>
 </html>

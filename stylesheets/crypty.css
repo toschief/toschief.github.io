@@ -11,22 +11,22 @@
   max-width: 1500px;
 }
 
-#d {
+.d {
   background-color: #141414;
   color: white;
   border-radius: 30px;
   text-align: center;
   flex-grow: 1;
   min-width: auto;
-  margin: 20px
+  margin: 20px;
 }
-#d1 {
+.d1 {
   background-color: #212121;
   border-radius: 30px;
   margin: 30px;
   padding: 10px;
 }
-#d2 {
+.d2 {
   background-color: #212121;
   border-radius: 30px;
   margin: 30px;
@@ -71,7 +71,7 @@ textarea {
   font-size: larger;
 }
 
-#output {
+output {
   margin: 20px;
 }
 
