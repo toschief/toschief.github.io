@@ -16,7 +16,7 @@
   color: white;
   border-radius: 30px;
   text-align: center;
-  flex-grow: 1;
+  flex: 1;
   min-width: auto;
   margin: 20px;
 }

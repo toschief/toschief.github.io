@@ -78,6 +78,34 @@
           <button onclick="vigenereCipher()" class="button2">Start</button>
         </div>
       </div>
+
+      <div class="d">
+        <h2 id="h">Playfair</h2>
+        <div class="d1">
+          <div>
+            <input
+              type="radio"
+              name="deen3"
+              id="r1p"
+              class="r"
+              checked="true"
+            />
+            <label>Decrypt</label>
+            <input type="radio" name="deen3" id="r2p" class="r" />
+            <label>Encrypt</label>
+          </div>
+
+          <textarea id="keyinputp"></textarea>
+        </div>
+
+        <div class="d2">
+          <div>
+            <p id="outputp"></p>
+            <textarea id="inputp"></textarea>
+          </div>
+          <button onclick="performCipher()" class="button2">Start</button>
+        </div>
+      </div>
     </div>
 
     <footer id="f1">
@@ -85,5 +113,6 @@
     </footer>
     <script src="./scripts/caesar.js"></script>
     <script src="./scripts/vigenere.js"></script>
+    <script src="./scripts/playfair.js"></script>
   </body>
 </html>
