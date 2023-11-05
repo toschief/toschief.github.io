@@ -19,6 +19,7 @@
   flex-grow: 1;
   min-width: auto;
   margin: 20px;
+  flex: 1;
 }
 .d1 {
   background-color: #212121;
@@ -40,4 +41,8 @@
   padding: 30px;
   color: white;
   margin: 20px;
+}
+
+a{
+  color: rgb(185, 185, 185);
 }

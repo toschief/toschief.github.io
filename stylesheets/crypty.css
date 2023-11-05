@@ -48,12 +48,12 @@
 .button1 {
   background-color: white;
   border-radius: 20px;
-  width: 70px;
-  height: 35px;
+  padding: 10px;
+  font-size: large;
+  font-weight: bold;
 }
 .button1:hover {
-  transform: scale(1.09);
-  border-radius: 15px;
+  border-radius: 12px;
 }
 th {
   padding: 10px;
@@ -78,10 +78,10 @@ output {
 .button2 {
   background-color: white;
   border-radius: 20px;
-  width: 80px;
-  height: 40px;
+  padding: 12px;
+  font-size: large;
+  font-weight: bold;
 }
 .button2:hover {
-  transform: scale(1.09);
-  border-radius: 15px;
+  border-radius: 12px;
 }
