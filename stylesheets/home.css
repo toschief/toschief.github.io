@@ -43,6 +43,33 @@
   margin: 20px;
 }
 
-a{
-  color: rgb(185, 185, 185);
+a {
+  color: black;
+  font-size: large;
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#dellhack {
+  border: 3px solid rgb(7, 182, 16);
+}
+
+.changelog {
+  text-align: left;
+  margin: 20px;
+}
+
+.new {
+  color: rgb(11, 216, 21);
+}
+
+.pc {
+  margin-top: 45px;
+}
+
+a:hover{
+  border-radius: 12px;
 }
