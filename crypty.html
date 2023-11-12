@@ -11,10 +11,33 @@
     <header id="h1">
       <h1 id="a1">toschief</h1>
       <div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">Menu</button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="./index.html">Home</a>
+            <a href="./crypty.html">Crypty</a>
+            <a href="https://github.com/toschief">Github</a>
+          </div>
+        </div>
+
+        <script>
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+          window.onclick = function (e) {
+            if (!e.target.matches(".dropbtn")) {
+              var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains("show")) {
+                myDropdown.classList.remove("show");
+              }
+            }
+          };
+        </script>
         <nav id="nav1">
-          <a href="./index.html" id="a2">Home</a>
-          <a href="./crypty.html" id="a2">Crypty</a>
-          <a id="a2" href="https://github.com/toschief">Github</a>
+          <a href="./index.html" class="a2">Home</a>
+          <a href="./crypty.html" class="a2">Crypty</a>
+          <a class="a2" href="https://github.com/toschief">Github</a>
         </nav>
       </div>
     </header>
