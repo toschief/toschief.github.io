@@ -1,5 +1,5 @@
 # toschief.github.io
 
-Website for projects
+Website for my projects
 
 Visit at https://toschief.github.io
