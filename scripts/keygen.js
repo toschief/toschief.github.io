@@ -1,25 +1,17 @@
+function generateKey() {
+    const keyLength = document.getElementById("keygeninput").innerText.length;
+    const key = generateRandomVigenereKey(keyLength);
+    document.getElementById('keygenoutput').innerText = key;
+}
 
-        function generateKey() {
-            const keyword = document.getElementById('keygeninput').value;
-            const key = generateVigenereKey(keyword);
-            document.getElementById('keygenoutput').innerText = key;
-        }
+function generateRandomVigenereKey(length) {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let key = '';
 
-        function generateVigenereKey(keyword) {
-            const keyLength = keyword.length;
-            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-            let key = '';
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        key += characters.charAt(randomIndex);
+    }
 
-            for (let i = 0; i < keyLength; i++) {
-                const keywordChar = keyword.charAt(i).toUpperCase();
-                const keywordIndex = characters.indexOf(keywordChar);
-
-                // Shift the characters to the right by the keyword index
-                const shiftedCharacters = characters.substring(keywordIndex) + characters.substring(0, keywordIndex);
-
-                key += shiftedCharacters;
-            }
-
-            return key;
-        }
-		
+    return key;
+}
