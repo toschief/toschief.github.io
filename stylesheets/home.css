@@ -21,6 +21,7 @@
   min-width: auto;
   margin: 20px;
   flex: 1;
+  min-width: 280px;
 }
 .d1 {
   background-color: #212121;
