@@ -21,7 +21,9 @@ a {
   padding: 10px;
   border-radius: 20px;
 }
-
+.c{
+  margin: 10px;
+}
 a:hover {
   border-radius: 12px;
 }

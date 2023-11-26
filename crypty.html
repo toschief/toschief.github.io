@@ -48,16 +48,27 @@
       <div class="d">
         <h2 id="h">Key Generator</h2>
         <div class="d1">
-          <input type="radio" name="deen1" id="r1" class="r1" checked="true" />
-          <label>Numbers</label>
-          <input type="radio" name="deen2" id="r2" class="r2" />
-          <label>Lowercase Letters</label>
+          <div>
+            <input type="checkbox" id="c1" class="c" />
+            <label>Uppercase Letters</label>
+          </div>
+          <div>
+            <input type="checkbox" id="c2" class="c" />
+            <label>Lowercase Letters</label>
+          </div>
+          <div>
+            <input type="checkbox" id="c3" class="c" />
+            <label>Numbers</label>
+          </div>
         </div>
 
         <div class="d2">
           <div>
             <p id="keygenoutput"></p>
-            <textarea id="keygeninput" placeholder="Input your text here"></textarea>
+            <textarea
+              id="keygeninput"
+              placeholder="Input your text here"
+            ></textarea>
           </div>
           <button onclick="generateKey()" class="button2">Generate</button>
         </div>
