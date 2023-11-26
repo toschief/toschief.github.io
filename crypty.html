@@ -44,6 +44,25 @@
 
     <div class="mainc">
       <h1 id="hs">Crypty</h1>
+
+      <div class="d">
+        <h2 id="h">Key Generator</h2>
+        <div class="d1">
+          <input type="radio" name="deen1" id="r1" class="r1" checked="true" />
+          <label>Numbers</label>
+          <input type="radio" name="deen2" id="r2" class="r2" />
+          <label>Lowercase Letters</label>
+        </div>
+
+        <div class="d2">
+          <div>
+            <p id="keygenoutput"></p>
+            <textarea id="keygeninput" placeholder="Input your text here"></textarea>
+          </div>
+          <button onclick="generateKey()" class="button2">Generate</button>
+        </div>
+      </div>
+
       <div class="d">
         <h2 id="h">Caesar</h2>
         <div class="d1">
@@ -136,6 +155,7 @@
       <p>Created by toschief</p>
     </footer>
     <script src="./scripts/caesar.js"></script>
+    <script src="./scripts/keygen.js"></script>
     <script src="./scripts/vigenere.js"></script>
     <script src="./scripts/playfair.js"></script>
   </body>
