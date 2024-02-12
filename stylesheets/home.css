@@ -45,15 +45,6 @@
   margin: 20px;
 }
 
-a {
-  color: black;
-  font-size: large;
-  text-decoration: none;
-  font-weight: bolder;
-  background-color: white;
-  padding: 10px;
-  border-radius: 20px;
-}
 
 #dellhack {
   border: 3px solid rgb(7, 182, 16);

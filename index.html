@@ -5,39 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>toschief</title>
     <link rel="stylesheet" type="text/css" href="./stylesheets/home.css" />
-    <link rel="stylesheet" type="text/css" href="./stylesheets/wpr.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/sub.css" />
+    <script src="./scripts/dropdown.js"></script>
   </head>
   <body style="background-color: #2d2d2d">
-    <header id="h1">
-      <h1 id="a1">toschief</h1>
-      <div>
-        <div class="dropdown">
-          <button class="dropbtn" onclick="myFunction()">Menu</button>
-          <div class="dropdown-content" id="myDropdown">
-            <a href="./index.html">Home</a>
-            <a href="https://github.com/toschief">Github</a>
-          </div>
+    <header class="wbar">
+      <h1 class="wtitle">toschief</h1>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="dropdown()">Menu</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="./index.html">Home</a>
+          <a href="https://github.com/toschief">Github</a>
         </div>
-
-        <script>
-          function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-          }
-
-          window.onclick = function (e) {
-            if (!e.target.matches(".dropbtn")) {
-              var myDropdown = document.getElementById("myDropdown");
-              if (myDropdown.classList.contains("show")) {
-                myDropdown.classList.remove("show");
-              }
-            }
-          };
-        </script>
-        <nav id="nav1">
-          <a class="a2" href="./index.html">Home</a>
-          <a class="a2" href="https://github.com/toschief">Github</a>
-        </nav>
       </div>
+    
+      <nav class="nbar">
+        <a class="nitem" href="./index.html">Home</a>
+        <a class="nitem" href="https://github.com/toschief">Github</a>
+      </nav>
     </header>
 
     <div class="mainc">
@@ -50,11 +37,11 @@
         <div class="d1">
           <h3>1.2.2</h3>
           <div class="changelog">
-            <p>Version 1.2.2 brings:</p>
+            <h4>Updates</h4>
             <li>Opencore Update</li>
             <li>Kext Updates</li>
             <li>better FileVault Support</li>
-            <p>Whats next:</p>
+            <h4>Whats next</h4>
             <li>Nothing big</li>
           </div>
         </div>
@@ -111,8 +98,8 @@
         </div>
       </div>
     </div>
-    <footer id="f1">
-      <p>Created by toschief</p>
+    <footer class="wbar">
+      <p class="wsubtitle">Created by toschief</p>
     </footer>
   </body>
 </html>
